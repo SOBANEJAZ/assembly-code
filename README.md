@@ -8,9 +8,14 @@ Assembly language is a low-level programming language invented in 1940s by 'Davi
 - optimising the processing time
 - Embedded programming
 
-## How everything works
+## Main Concept
 
+### How a Program is executed
 <img src= "https://raw.githubusercontent.com/SOBANEJAZ/assembly-code/master/flowchart%20of%20workflow%20of%20program.png" />
+
+### All types of registers
+
+<img src= "https://raw.githubusercontent.com/SOBANEJAZ/assembly-code/master/all%20types%20of%20registers.png" />
 
 ## Note
 I am haunted by assembly
