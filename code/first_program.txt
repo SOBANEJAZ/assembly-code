@@ -1,0 +1,23 @@
+;DosBox program is required to run the file that I have attached because that uses DOS-based x86 assembly language
+; thats why i put the code in .txt
+
+
+
+dosseg
+.model small
+.stack 100h
+
+.data
+    hello db 'Hello, World!', 0
+
+.code
+main proc
+    mov dl, offset hello   ; Load the offset of the hello string into dl
+    mov ah, 9              ; Set the function code 9 (display string)
+    int 21h                ; Call the DOS interrupt 21h to print the string
+
+    mov ah, 4Ch            ; Set the function code 4Ch (program termination)
+    int 21h                ; Call the DOS interrupt 21h to terminate the program
+main endp
+
+end main
